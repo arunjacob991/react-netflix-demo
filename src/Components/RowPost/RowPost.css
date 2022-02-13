@@ -1,0 +1,16 @@
+.title{
+    font-style: Bolder;
+    font-size: 2rem;
+}
+.posters{
+    display: flex;
+    overflow-x: scroll;
+}
+.posters::-webkit-scrollbar{
+    display: none;
+}
+.poster{
+    max-width: 500px;
+    max-height: 300px;
+    margin-right: 1rem;
+}
