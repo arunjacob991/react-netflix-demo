@@ -11,7 +11,20 @@
 }
 .poster{
     max-width: 500px;
-    max-height: 200px;
+    width: 250px;
     margin-right: 1rem;
     margin-bottom: 2rem;
+    transition: 150ms ease-in;
+}
+.poster:hover{
+    transform: scale(2);
+}
+.smallposter{
+    max-height: 180px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    transition: 200ms ease-in;
+}
+.smallposter:hover{
+    transform: scale(2);
 }

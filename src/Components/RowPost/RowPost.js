@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from '../../axios'
 import './RowPost.css'
-import { API_KEY, imageUrl } from '../../constants/constants'
+import { imageUrl } from '../../constants/constants'
 
-function RowPost() {
+function RowPost(props) {
 
   const [movies, setMovies] = useState([]);
 
  useEffect(() => {
-   axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`)
+   axios.get(props.url)
           .then((response) => {
             console.log(response.data);
             setMovies(response.data.results)
@@ -20,12 +20,12 @@ function RowPost() {
   return (
     <div className='row'>
         <h2 className="title">
-            Title
+            { props.title }
         </h2>
         <div className="posters">
 
           { movies.map((obj) =>
-            <img className='poster' src={`${imageUrl + obj.poster_path}`} alt="posters" />
+            <img className= { props.isSmall ? 'smallposter' : 'poster'} src={`${imageUrl + obj.poster_path}`} alt="posters" />
 
           ) }
            
