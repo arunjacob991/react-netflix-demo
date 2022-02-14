@@ -11,6 +11,7 @@
 }
 .poster{
     max-width: 500px;
-    max-height: 300px;
+    max-height: 200px;
     margin-right: 1rem;
+    margin-bottom: 2rem;
 }
