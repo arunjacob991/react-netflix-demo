@@ -14,6 +14,7 @@ function App() {
       <RowPost url={comedy} title="Comedy" isSmall />
       <RowPost url={romance} title="Romance" isSmall />
       <RowPost url={trending} title="Trending" isSmall />
+      lksfsnfsnflsdf
     </div>
   );
 }
